@@ -1,9 +1,13 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
 apply plugin: 'maven'
 
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.natberland'
 
 android {
     compileSdkVersion 27
@@ -21,6 +25,7 @@ android {
         }
     }
 }
+/*
 
 uploadArchives {
     repositories {
@@ -34,7 +39,7 @@ uploadArchives {
         }
     }
 }
-task install(dependsOn: uploadArchives)
+task install(dependsOn: uploadArchives)*/
 
 
 dependencies {
