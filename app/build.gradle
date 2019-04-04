@@ -25,28 +25,12 @@ android {
         }
     }
 }
-/*
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            // Altere a linha abaixo para um diretório do seu computador
-            repository(url: "file:///c:/gradle/rep")
-
-            pom.groupId = GROUP
-            pom.artifactId = POM_ARTIFACT_ID
-            pom.version = VERSION_NAME
-        }
-    }
-}
-task install(dependsOn: uploadArchives)*/
-
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
